@@ -1,6 +1,6 @@
 {
-  "name": "demo-app-example-four",
-  "version": "1.0.4",
+  "name": "demo-app-example-four-abc",
+  "version": "1.0.5",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
