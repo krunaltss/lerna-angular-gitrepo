@@ -1,0 +1,109 @@
+0 silly input [ 'publish' ]
+1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+2 verbose rootPath C:\Users\admin\Desktop\Lerna\LA-Github
+3 info version 2.11.0
+4 silly isInitialized
+5 silly isInitialized true
+6 silly existsSync C:\Users\admin\Desktop\Lerna\LA-Github\VERSION
+7 info versioning independent
+8 silly initialize attempt
+9 silly isDetachedHead
+10 silly getCurrentBranch
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags true
+19 silly getLastTag
+20 verbose getLastTag demo-app-example-four@1.0.4
+21 info Comparing with demo-app-example-four@1.0.4.
+22 silly diffSinceIn demo-app-example-four@1.0.4 packages/demo-app-example-four
+23 silly diff packages/demo-app-example-four/package-lock.json
+23 silly diff packages/demo-app-example-four/package.json
+24 silly diffSinceIn demo-app-example-four@1.0.4 packages/demo-app-example-three
+25 silly diff packages/demo-app-example-three/package-lock.json
+25 silly diff packages/demo-app-example-three/package.json
+26 silly diffSinceIn demo-app-example-four@1.0.4 packages/demo-app-main
+27 silly diff packages/demo-app-main/package-lock.json
+28 verbose updated demo-app-example-four-abc
+29 verbose updated demo-app-example-three-abc
+30 verbose updated demo-app-main
+31 info Checking for prereleased packages...
+32 silly collectDependents
+33 silly isPackageDependentOf demo-app-example-four-abc demo-app-example-four-abc
+34 silly isPackageDependentOf demo-app-example-four-abc demo-app-example-three-abc
+35 silly isPackageDependentOf demo-app-example-four-abc demo-app-main
+36 silly isPackageDependentOf demo-app-example-three-abc demo-app-example-four-abc
+37 silly isPackageDependentOf demo-app-example-three-abc demo-app-example-three-abc
+38 silly isPackageDependentOf demo-app-example-three-abc demo-app-main
+39 silly isPackageDependentOf demo-app-main demo-app-example-four-abc
+40 silly isPackageDependentOf demo-app-main demo-app-example-three-abc
+41 silly isPackageDependentOf demo-app-main demo-app-main
+42 silly collectUpdates
+43 verbose has filtered update demo-app-example-four-abc
+44 verbose has filtered update demo-app-example-three-abc
+45 verbose has filtered update demo-app-main
+46 silly initialize success
+47 silly execute attempt
+48 silly runScriptSync preversion lerna-angular-cli-monorepo
+49 silly runScriptSync preversion demo-app-example-four-abc
+50 silly runScriptSync version demo-app-example-four-abc
+51 silly runScriptSync preversion demo-app-example-three-abc
+52 silly runScriptSync version demo-app-example-three-abc
+53 silly runScriptSync preversion demo-app-main
+54 silly runScriptSync version demo-app-main
+55 silly runScriptSync version lerna-angular-cli-monorepo
+56 silly addFile C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-example-four\package.json
+57 silly addFile C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-example-three\package.json
+58 silly addFile C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-main\package.json
+59 silly commit Publish
+59 silly commit
+59 silly commit  - demo-app-example-four-abc@1.0.5
+59 silly commit  - demo-app-example-three-abc@1.0.5
+59 silly commit  - demo-app-main@1.0.5
+60 verbose commit [ 'commit',
+60 verbose commit   '--no-verify',
+60 verbose commit   '-F',
+60 verbose commit   'C:\\Users\\admin\\AppData\\Local\\Temp\\fa538208-1b50-4bf1-9272-536a293ad3a5\\lerna-commit.txt' ]
+61 silly addTag demo-app-example-four-abc@1.0.5
+62 silly addTag demo-app-example-three-abc@1.0.5
+63 silly addTag demo-app-main@1.0.5
+64 silly runScriptSync postversion demo-app-example-four-abc
+65 silly runScriptSync postversion demo-app-example-three-abc
+66 silly runScriptSync postversion demo-app-main
+67 silly runScriptSync postversion lerna-angular-cli-monorepo
+68 info publish Publishing packages to npm...
+69 silly existsSync C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-example-four\scripts\prepublish.js
+70 verbose execScript No prepublish script found at C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-example-four\scripts\prepublish.js
+71 silly existsSync C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-example-three\scripts\prepublish.js
+72 verbose execScript No prepublish script found at C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-example-three\scripts\prepublish.js
+73 silly existsSync C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-main\scripts\prepublish.js
+74 verbose execScript No prepublish script found at C:\Users\admin\Desktop\Lerna\LA-Github\packages\demo-app-main\scripts\prepublish.js
+75 info git Pushing tags...
+76 silly pushWithTags [ 'origin',
+76 silly pushWithTags   [ 'demo-app-example-four-abc@1.0.5',
+76 silly pushWithTags     'demo-app-example-three-abc@1.0.5',
+76 silly pushWithTags     'demo-app-main@1.0.5' ] ]
+77 silly getCurrentBranch
+78 verbose getCurrentBranch master
+79 error execute caught error
+80 error Error: fatal: HttpRequestException encountered.
+80 error    An error occurred while sending the request.
+80 error fatal: HttpRequestException encountered.
+80 error    An error occurred while sending the request.
+80 error bash: /dev/tty: No such device or address
+80 error error: failed to execute prompt script (exit code 1)
+80 error fatal: could not read Username for 'https://github.com': No error
+80 error
+80 error     at Function.module.exports.sync (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:303:26)
+80 error     at Function.execSync (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\ChildProcessUtilities.js:59:30)
+80 error     at Function.pushWithTags (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\GitUtilities.js:155:39)
+80 error     at C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:367:36
+80 error     at PublishCommand.npmUpdateAsLatest (C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:857:16)
+80 error     at C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:359:16
+80 error     at C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\lib\commands\PublishCommand.js:848:9
+80 error     at C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\node_modules\async\lib\async.js:726:13
+80 error     at C:\Users\admin\AppData\Roaming\npm\node_modules\lerna\node_modules\async\lib\async.js:52:16
